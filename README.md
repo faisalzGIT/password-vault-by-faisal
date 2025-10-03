@@ -1,12 +1,83 @@
-# React + Vite
+# Password Vault
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A secure and user-friendly web application for storing and managing your passwords. Built during the *Full-Stack Web Development by CodeWithHarry* course.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Features
 
-## Expanding the ESLint configuration
+- Save credentials: store **URL**, **Username**, **Password**
+- View, edit, delete saved entries
+- Copy credentials with one click
+- Responsive layout (desktop + mobile/tablet)
+- Uses MongoDB for storage (or local storage if you’ve not connected backend yet)
+- Secure and intuitive UI using React, Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔧 Tech Stack
+
+| Layer            | Technology             |
+|------------------|-------------------------|
+| Frontend         | React.js, Tailwind CSS  |
+| Routing          | React Router            |
+| Backend / API    | Node.js + Express.js    |
+| Database         | MongoDB                 |
+| Build Tool       | Vite                    |
+
+---
+
+## 🚀 Installation / Setup
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/faisalzGIT/Full-Stack-Web-Development-by-CodeWithHarry.git
+   cd Full-Stack-Web-Development-by-CodeWithHarry/video130
+   ```
+
+2. Install dependencies  
+   ```bash
+   npm install
+   ```
+
+3. Set up environment variables  
+   Create a `.env` file (if required) with values like:  
+   ```
+   MONGO_URI=mongodb://localhost:27017/
+   PORT=3000
+   ```
+
+4. Run the development   
+   ```bash
+   npm run dev
+   ```
+
+5. Run the Backend   
+   ```bash
+    cd backend
+    npm install
+    node --watch server.js
+   ```
+
+6. Open in browser at `http://localhost:3000` (or whichever port)
+
+---
+
+## 🔐 Usage
+
+- Use the **“Get Started”** button to navigate to the Vault page  
+- Add a new credential (URL, username, password)  
+- Edit or delete credential entries  
+- Eye icon to show/hide password  
+- Credentials are saved securely (via backend)
+
+---
+
+## 🧑‍💻 Author
+
+**Mohammad Faisal**  
+GitHub: [faisalzGIT](https://github.com/faisalzGIT)  
+LinkedIn: [My-linkedin-profile  ](https://www.linkedin.com/in/faisalz1/)
+
+
+---
